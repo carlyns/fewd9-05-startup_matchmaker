@@ -1,0 +1,25 @@
+/* Universal Box Sizing with Inheritance*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Clearfix hack */
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+/* Background hint from Dave */
+
+body{
+	background: url(../images/coworking.jpg) no-repeat;
+}
